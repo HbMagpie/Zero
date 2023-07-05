@@ -12,111 +12,14 @@ div {
     box-sizing: border-box;
 }
 
-/* Start! 배너 슬라이드 박스 */
-
-[name="slide"] {display:none;}
-.slidebox {max-width: 1000px;width: 100%;margin: 0 auto; position:relative;z-index:1}
-.slidebox img {max-width: 100%;}
-.slidebox .slidelist {
-	white-space: nowrap;
-	font-size: 0;
-	overflow: hidden;
-}
-.slidebox .slideitem {
-	position: relative;
-	display: inline-block;
-	vertical-align: middle;
-	width: 100%;
-	transition: all .35s;
-}
-
-[id="slide01"]:checked ~ .slidelist .slideitem {transform: translateX(0);animation: slide01 20s infinite;}
-[id="slide02"]:checked ~ .slidelist .slideitem {transform: translateX(-100%);animation: slide02 20s infinite;}
-[id="slide03"]:checked ~ .slidelist .slideitem {transform: translateX(-200%);animation: slide03 20s infinite;}
-[id="slide04"]:checked ~ .slidelist .slideitem {transform: translateX(-300%);animation: slide04 20s infinite;}
-
-@keyframes slide01 {
-	0% {left: 0%;}
-	23% {left: 0%;}
-	25% {left: -100%;}
-	48% {left: -100%;}
-	50% {left: -200%;}
-	73% {left: -200%;}
-	75% {left: -300%;}
-	98% {left: -300%;}
-	100% {left: 0%;}
-}
-
-@keyframes slide02 {
-	0% {left: 0%;}
-	23% {left: 0%;}
-	25% {left: -100%;}
-	48% {left: -100%;}
-	50% {left: -200%;}
-	73% {left: -200%;}
-	75% {left: 100%;}
-	98% {left: 100%;}
-	100% {left: 0%;}
-}
-
-@keyframes slide03 {
-	0% {left: 0%;}
-	23% {left: 0%;}
-	25% {left: -100%;}
-	48% {left: -100%;}
-	50% {left: 200%;}
-	73% {left: 200%;}
-	75% {left: 100%;}
-	98% {left: 100%;}
-	100% {left: 0%;}
-}
-
-@keyframes slide04 {
-	0% {left: 0%;}
-	23% {left: 0%;}
-	25% {left: 300%;}
-	48% {left: 300%;}
-	50% {left: 200%;}
-	73% {left: 200%;}
-	75% {left: 100%;}
-	98% {left: 100%;}
-	100% {left: 0%;}
-}
-
-.slidebox input[type="radio"] {  /*라디오 박스 숨기기*/
-	  position: absolute;
-      width: 0;
-      height: 0;
-      padding: 0;
-      overflow: hidden;
-      border: 0;
-}
-
-/*.slidebox label {     슬라이드 버튼(label) 
-     margin-top: 20px;
-     margin-left: 20px;
-      width: 0px;
-       height: 0px;
-       background-color: #b0b0b0;
-       border-radius: 2px;
-       padding: 3px 3px;
-      cursor: pointer;
-     transition: all 0.3s ease;
-     position: relative;
-     display: inline-block;
-       box-shadow:inset 1px 1px 1px 0px rgba(255,255,255,.5),
-               2px 2px 5px 0px rgba(0,0,0,.1),
-               1px 1px 2px 0px rgba(0,0,0,.1);
-       outline: none;
-} */
-
-/* End! 배너 슬라이드 박스 */ 
-
 /* Start! 검색 박스 영역 */
 .search_area {
 	width: 50px;
 	height: 100px;
 	float:left;
+}
+.search_wrap {
+	margin-left: 250px;
 }
 /* End! 검색 박스 영역 */
 
